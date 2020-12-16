@@ -4,17 +4,17 @@
  */
 const isHappy = function (n) {
   if (n === 1) {
-    return true
+    return true;
   }
 
-  const list = new Set()
+  const list = new Set();
 
   while (!list.has(n)) {
     list.add(n);
     let sum = 0;
     while (n) {
       const value = n % 10;
-      sum += (value * value);
+      sum += value * value;
       n = parseInt(n / 10);
     }
     if (sum === 1) {

@@ -3,8 +3,10 @@
  * @return {number[]}
  */
 const sortedSquares = function (A) {
-  const len = A.length, res = new Array(len);
-  let left = 0, right = len - 1;
+  const len = A.length,
+    res = new Array(len);
+  let left = 0,
+    right = len - 1;
 
   while (left <= right) {
     if (A[left] < 0 && -A[left] > A[right]) {
@@ -15,4 +17,4 @@ const sortedSquares = function (A) {
   }
 
   return res;
-}
+};

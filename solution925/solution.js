@@ -4,8 +4,10 @@
  * @return {boolean}
  */
 const isLongPressedName = function (name, typed) {
-  const n = name.length, m = typed.length;
-  let i = 0, j = 0;
+  const n = name.length,
+    m = typed.length;
+  let i = 0,
+    j = 0;
 
   while (j < m) {
     if (i < n && name[i] === typed[j]) {

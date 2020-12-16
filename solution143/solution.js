@@ -1,6 +1,6 @@
 function ListNode(val, next) {
-  this.val = (val === undefined ? 0 : val);
-  this.next = (next === undefined ? null : next);
+  this.val = val === undefined ? 0 : val;
+  this.next = next === undefined ? null : next;
 }
 
 /**
@@ -10,7 +10,7 @@ function ListNode(val, next) {
  */
 const reorderList = function (head) {
   if (!head || !head.next) {
-    return head
+    return head;
   }
 
   const arr = [];
@@ -20,7 +20,8 @@ const reorderList = function (head) {
     head = head.next;
   }
 
-  let left = 0, right = arr.length - 1;
+  let left = 0,
+    right = arr.length - 1;
 
   while (left < right) {
     left < right && (arr[left++].next = arr[right]);
@@ -29,5 +30,5 @@ const reorderList = function (head) {
 
   arr[left].next = null;
 
-  return arr[0]
+  return arr[0];
 };

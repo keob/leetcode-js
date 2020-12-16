@@ -20,4 +20,4 @@ const smallerNumbersThanCurrent = function (nums) {
   }
 
   return res;
-}
+};

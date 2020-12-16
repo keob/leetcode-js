@@ -12,7 +12,8 @@ const detectCycle = function (head) {
     return null;
   }
 
-  let slow = head, fast = head;
+  let slow = head,
+    fast = head;
 
   while (fast !== null) {
     slow = slow.next;

@@ -9,7 +9,8 @@ const canPartition = function (nums) {
     return false;
   }
 
-  let sum = 0, maxNum = 0;
+  let sum = 0,
+    maxNum = 0;
 
   for (const num of nums) {
     sum += num;

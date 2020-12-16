@@ -11,13 +11,13 @@ const convertBST = function (root) {
   const convert = node => {
     if (node === null) {
       return 0;
-    };
+    }
 
     convert(node.right);
     sum += node.val;
     node.val = sum;
     convert(node.left);
-  }
+  };
 
   let sum = 0;
 

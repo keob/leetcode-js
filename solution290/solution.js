@@ -6,7 +6,7 @@
 const wordPattern = function (pattern, s) {
   const word2ch = new Map();
   const ch2word = new Map();
-  const words = s.split(" ");
+  const words = s.split(' ');
   if (pattern.length !== words.length) {
     return false;
   }

@@ -11,9 +11,9 @@ const subsets = function (nums) {
       return;
     }
     list.push(nums[index]);
-    dfs(index + 1, list)
-    list.pop()
-    dfs(index + 1, list)
+    dfs(index + 1, list);
+    list.pop();
+    dfs(index + 1, list);
   };
 
   dfs(0, []);

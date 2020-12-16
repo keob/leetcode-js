@@ -13,7 +13,7 @@ const mergeTrees = (t1, t2) => {
     return t2;
   }
 
-  if (t1 && t2 === null || t1 === null && t2 === null) {
+  if ((t1 && t2 === null) || (t1 === null && t2 === null)) {
     return t1;
   }
 

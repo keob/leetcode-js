@@ -8,7 +8,7 @@ function TreeNode(val) {
  * @return {number}
  */
 const minCameraCover = function (root) {
-  const dfs = (root) => {
+  const dfs = root => {
     if (!root) {
       return [Math.floor(Number.MAX_SAFE_INTEGER / 2), 0, 0];
     }
@@ -20,7 +20,7 @@ const minCameraCover = function (root) {
     const c = Math.min(a, lb + rb);
 
     return [a, b, c];
-  }
+  };
 
   return dfs(root)[1];
 };

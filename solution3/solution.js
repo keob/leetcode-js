@@ -3,8 +3,10 @@
  * @return {number}
  */
 const lengthOfLongestSubstring = function (s) {
-  let res = 0, temp = '';
-  let index = 0, len = 0;
+  let res = 0,
+    temp = '';
+  let index = 0,
+    len = 0;
 
   for (let i = 0; i < s.length; i++) {
     index = temp.indexOf(s[i]);
@@ -14,7 +16,7 @@ const lengthOfLongestSubstring = function (s) {
       temp = temp.slice(index + 1) + s[i];
     }
     len = temp.length;
-    (res < len) && (res = len);
+    res < len && (res = len);
   }
 
   return res;

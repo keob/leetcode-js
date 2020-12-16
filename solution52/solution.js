@@ -9,7 +9,6 @@ const totalNQueens = function (n) {
   return backtrack(n, 0, columns, diagonals1, diagonals2);
 };
 
-
 function backtrack(n, row, columns, diagonals1, diagonals2) {
   if (row === n) {
     return 1;

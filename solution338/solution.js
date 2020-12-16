@@ -10,7 +10,7 @@ const countBits = function (num) {
     let count = 0;
     let tmp = n;
     while (tmp) {
-      if (tmp & 1 == 1) {
+      if (tmp & (1 == 1)) {
         count++;
       }
       tmp >>>= 1;

@@ -5,7 +5,8 @@
 const islandPerimeter = function (grid) {
   const dx = [0, 1, 0, -1];
   const dy = [1, 0, -1, 0];
-  const n = grid.length, m = grid[0].length;
+  const n = grid.length,
+    m = grid[0].length;
   let ans = 0;
 
   for (let i = 0; i < n; ++i) {

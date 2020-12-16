@@ -12,7 +12,8 @@ const partitionLabels = function (S) {
   }
 
   const partition = [];
-  let start = 0, end = 0;
+  let start = 0,
+    end = 0;
 
   for (let i = 0; i < length; i++) {
     end = Math.max(end, last[S.codePointAt(i) - codePointA]);

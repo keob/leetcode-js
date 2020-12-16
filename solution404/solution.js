@@ -7,7 +7,7 @@ function TreeNode(val) {
  * @param {TreeNode} root
  * @return {number}
  */
-const sumOfLeftLeaves = (root) => {
+const sumOfLeftLeaves = root => {
   if (root == null) {
     return 0;
   }

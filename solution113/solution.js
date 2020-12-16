@@ -29,7 +29,7 @@ const pathSum = function (root, sum) {
       dfs(temp, res, s, sum, root.right);
       temp.pop();
     }
-  }
+  };
 
   let res = [];
 

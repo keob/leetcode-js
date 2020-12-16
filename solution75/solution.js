@@ -3,7 +3,8 @@
  * @return {void} Do not return anything, modify nums in-place instead.
  */
 const sortColors = function (nums) {
-  let i = 0, count = 0;
+  let i = 0,
+    count = 0;
   while (count < nums.length) {
     if (nums[i] === 0) {
       nums.splice(i, 1);

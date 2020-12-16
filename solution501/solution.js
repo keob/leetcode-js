@@ -9,10 +9,13 @@ function TreeNode(val) {
  */
 const findMode = function (root) {
   let answer = [];
-  let cur = root, pre = null;
-  let base = 0, count = 0, maxCount = 0;
+  let cur = root,
+    pre = null;
+  let base = 0,
+    count = 0,
+    maxCount = 0;
 
-  const update = (x) => {
+  const update = x => {
     if (x === base) {
       ++count;
     } else {
@@ -26,8 +29,7 @@ const findMode = function (root) {
       maxCount = count;
       answer = [base];
     }
-  }
-
+  };
 
   while (cur !== null) {
     if (cur.left === null) {

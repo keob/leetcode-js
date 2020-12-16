@@ -1,7 +1,7 @@
 function TreeNode(val, left, right) {
-  this.val = (val === undefined ? 0 : val)
-  this.left = (left === undefined ? null : left)
-  this.right = (right === undefined ? null : right)
+  this.val = val === undefined ? 0 : val;
+  this.left = left === undefined ? null : left;
+  this.right = right === undefined ? null : right;
 }
 
 /**
@@ -11,11 +11,11 @@ function TreeNode(val, left, right) {
 const postorderTraversal = function (root) {
   let nums = [];
 
-  let postOrder = (root) => {
+  let postOrder = root => {
     root.left && postOrder(root.left);
     root.right && postOrder(root.right);
     nums.push(root.val);
-  }
+  };
 
   root && postOrder(root);
 

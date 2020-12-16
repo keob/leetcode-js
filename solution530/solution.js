@@ -8,9 +8,10 @@ function TreeNode(val) {
  * @return {number}
  */
 const getMinimumDifference = function (root) {
-  let ans = Number.MAX_SAFE_INTEGER, pre = -1;
+  let ans = Number.MAX_SAFE_INTEGER,
+    pre = -1;
 
-  const dfs = (root) => {
+  const dfs = root => {
     if (root === null) {
       return;
     }
@@ -22,7 +23,7 @@ const getMinimumDifference = function (root) {
       pre = root.val;
     }
     dfs(root.right);
-  }
+  };
 
   dfs(root);
 

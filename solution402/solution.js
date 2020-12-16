@@ -17,7 +17,7 @@ const removeKdigits = function (num, k) {
     stk.pop();
   }
 
-  let ans = "";
+  let ans = '';
   let isZero = true;
   for (const digit of stk) {
     if (isZero && digit === '0') {
@@ -26,5 +26,5 @@ const removeKdigits = function (num, k) {
     isZero = false;
     ans += digit;
   }
-  return ans === "" ? "0" : ans;
+  return ans === '' ? '0' : ans;
 };

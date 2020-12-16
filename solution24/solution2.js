@@ -1,6 +1,6 @@
 function ListNode(val, next) {
-  this.val = (val === undefined ? 0 : val)
-  this.next = (next === undefined ? null : next)
+  this.val = val === undefined ? 0 : val;
+  this.next = next === undefined ? null : next;
 }
 
 /**
@@ -17,5 +17,6 @@ const swapPairs = function (head) {
   head.next = swapPairs(newHead.next);
   newHead.next = head;
 
-  return newHead; F
+  return newHead;
+  F;
 };

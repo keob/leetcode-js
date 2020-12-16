@@ -35,7 +35,8 @@ const sumOfDistancesInTree = function (N, edges) {
       if (neighbor == parent) {
         continue;
       }
-      distSum[neighbor] = distSum[root] - nodeNum[neighbor] + (N - nodeNum[neighbor]);
+      distSum[neighbor] =
+        distSum[root] - nodeNum[neighbor] + (N - nodeNum[neighbor]);
       preOrder(neighbor, root);
     }
   };

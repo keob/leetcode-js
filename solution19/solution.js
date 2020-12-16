@@ -1,6 +1,6 @@
 function ListNode(val, next) {
-  this.val = (val === undefined ? 0 : val)
-  this.next = (next === undefined ? null : next)
+  this.val = val === undefined ? 0 : val;
+  this.next = next === undefined ? null : next;
 }
 
 /**
@@ -9,7 +9,8 @@ function ListNode(val, next) {
  * @return {ListNode}
  */
 const removeNthFromEnd = function (head, n) {
-  let fast = head, slow = head;
+  let fast = head,
+    slow = head;
   while (--n) {
     fast = fast.next;
   }
